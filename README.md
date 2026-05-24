@@ -1,7 +1,7 @@
 <h1 align="center">Bernardo Vega</h1>
 
 <p align="center">
-  <em>Software Developer · Machine Learning Engineer in training</em><br/>
+  <em>Software Developer · Machine Learning Engineer</em><br/>
   Hermosillo, México · open to remote ML & data roles
 </p>
 
