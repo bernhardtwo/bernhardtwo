@@ -1,54 +1,122 @@
-# Ruben Vega: Hello World! 👋💻
+<h1 align="center">Bernardo Vega</h1>
+<p align="center">
+  <em>Software Developer · Machine Learning Engineer</em><br/>
+  Hermosillo, México · open to remote ML/data roles
+</p>
 
-### Software Developer | Data Enthusiast | Recent Graduate in Software Engineering
+<p align="center">
+  <a href="mailto:rruizveg@gmail.com">
+    <img src="https://img.shields.io/badge/Email-rruizveg@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white"/>
+  </a>
+  <a href="https://www.linkedin.com/in/bernardo-vega-237791295/">
+    <img src="https://img.shields.io/badge/LinkedIn-bernardo--vega-0A66C2?style=flat&logo=linkedin&logoColor=white"/>
+  </a>
+</p>
 
-🧠 Passionate about AI, Machine Learning, and Data Automation
+---
 
-🚀 Developing innovative solutions to optimize processes
+### About
 
-⚡ Current focus: Web Scraping, ML Models, and Data Pipelines
+Full-stack developer at [NeuralGT](https://github.com/NeuralGT), where I build **Fintrack**, a personal finance SaaS for the Chilean market (FastAPI + PostgreSQL + Next.js). On the side, I'm transitioning toward Machine Learning Engineering: building production-grade ML projects, studying graduate-level statistics and optimization, and aiming for a remote ML role by late 2026.
 
-💬 Love discussing: Python Programming • Big Data • Cybersecurity • Game Development
+Recent graduate in Software Engineering (UTH, 97/100 GPA). Currently preparing for a Data Science master's program while shipping ML side projects.
 
-🎯 Always exploring: Latest trends in AI and software engineering
+---
 
-📫 Let's connect:
+### Featured project
 
-rruizveg@outlook.com • rruizveg@gmail.com • [LinkedIn](https://www.linkedin.com/in/ruben-vega-237791295/) • [GitHub](https://github.com/vegalastname) • +52 662 466 2225 • Hermosillo, Mexico
+#### [`geoplay-recommender`](https://github.com/bernhardtwo/geoplay) — Geo-contextual player segmentation & content ranking
 
-![Profile Views](https://komarev.com/ghpvc/?username=vegalastname&color=blue)
+<img src="https://img.shields.io/badge/status-in_progress-blue?style=flat-square"/> <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/> <img src="https://img.shields.io/badge/HDBSCAN-clustering-4B8BBE?style=flat-square"/> <img src="https://img.shields.io/badge/LightGBM-ranking-2E8B57?style=flat-square"/> <img src="https://img.shields.io/badge/H3-spatial-FF6B35?style=flat-square"/> <img src="https://img.shields.io/badge/MLflow-tracking-0194E2?style=flat-square&logo=mlflow&logoColor=white"/>
 
-🛠️ Tech Stack
+Production-grade ML pipeline simulating a Pokémon GO–style game with 50,000 synthetic players, 162M events, and 5 behavioral archetypes (commuter, casual evening, weekend explorer, hardcore raider, lunch player). The project clusters players via HDBSCAN on a 54-feature matrix (temporal density, H3 spatial footprint, session behavior) and ranks content with LightGBM.
 
-Programming Languages: Python • R
+Stack highlights: `uv` for environment management, partition-streaming feature pipeline (bounded ~3GB memory on 162M events), strict ruff + mypy linting, structured logging, MLflow experiment tracking, FastAPI serving layer, Dockerized deployment.
 
-Libraries & Frameworks: NumPy • Pandas • Matplotlib • Seaborn • TensorFlow • Scikit-Learn • RenPy
+---
 
-Machine Learning: IBM Maivs Vision Systems (Computer Vision, Machine Learning)
+### Other projects
 
-Development Tools: Power Apps • Power Automate • Power BI • SharePoint • Alteryx Designer • Visual Studio Code • Autodesk Inventor • QLS
+- **[Fintrack](https://github.com/NeuralGT)** (private, NeuralGT) — Full-stack SaaS for personal finance in Chile. FastAPI backend with Alembic migrations, PostgreSQL on AWS RDS, Next.js frontend with Feature-Sliced Design, integrations with Floid (banking sync), Binance, and mindicador.cl.
 
-Version Control: Git • GitHub
+---
 
-Databases: SQL (Microsoft SQL Server, MySQL) • NoSQL (MongoDB)
+### Tech stack
 
-Additional Expertise: Cybersecurity fundamentals • Big Data processing • 3D printing • Data visualization • Project coordination • Public speaking • Creative storytelling • Visual Novel game development
+**Languages**
 
-Languages: Spanish (Native) • English (Intermediate-Advanced, B2-C1)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
 
-Certifications: [![GitHub Foundations](https://img.shields.io/badge/GitHub-Foundations-blue?logo=github)](https://www.credly.com/badges/5117de0f-e46b-4f1f-8173-73652d0f366f/public_url)
+**ML / Data**
 
-🌟 Experience Highlights
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
+![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat&logo=mlflow&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
 
-- **Manufacturing Trainee @ Ford Motor Company** (March 2024 – Present): Building apps with Microsoft Power Stack, data science with Python & Alteryx, 3D printing solutions.
+**Backend**
 
-- **Freelance Software Developer** (September 2022 – Present): Web scraping (basic to advanced with BeautifulSoup, Scrapy, Selenium), ML model development & deployment, data pipelines (ETL, feature engineering).
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat&logo=pydantic&logoColor=white)
+![Alembic](https://img.shields.io/badge/Alembic-484C50?style=flat)
 
-- **Visual Novel Developer** (2024 – Present): Creating interactive games with Python & RenPy, blending storytelling and tech.
+**Frontend**
 
-🎓 Education: Engineering Degree in Software Development, Technological University of Hermosillo (Graduated August 2025)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
+![TanStack Query](https://img.shields.io/badge/TanStack_Query-FF4154?style=flat&logo=react-query&logoColor=white)
 
-Building efficient, secure, and creative tech solutions, one project at a time 🚀
+**Tooling**
 
-### 🗣️ Top Languages
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=vegalastname&layout=compact&theme=radical)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
+![uv](https://img.shields.io/badge/uv-DE5FE9?style=flat)
+![Ruff](https://img.shields.io/badge/Ruff-D7FF64?style=flat&logo=ruff&logoColor=black)
+
+---
+
+### What I'm focused on
+
+- Shipping `geoplay-recommender` end-to-end: clustering → ranking → MLflow → FastAPI → Docker
+- Strengthening statistics and optimization fundamentals for graduate-level ML work
+- Building fluent technical English for international remote collaboration
+
+When I'm not coding, I write fiction (currently a novella anchored in Camus and Kierkegaard), explore From Software games, and overthink internet culture.
+
+---
+
+<details>
+<summary><em>signature</em></summary>
+
+<pre>
+                            .::::@-   .-::$-
+                             ;::;;;;#;:::;;+ -H#@
+ *&&-        :      :*              *;H;+++;+++++++;.
+ -:&;;;+#  ,&:     ::               :+++$@    @H+++#
+   ;++++++;;;+*   ;;;             --H;*#
+     #     .;;+  +++             -::;**
+        +   ;;*+++++#H         :;::$*  #       ;+;;+@  @
+           #+;;++$::::+*:::::@+&@;,        ;@*&@@+**&$$$@
+          &;+:;;::::::;**;+;+&,$- .....        ;;;;;;;     -
+          ,:$;++::::;:+**@,,,,,,.             ;+++;;;+
+         H:+++++;::H #***&***@*+.-+*+H#H@HH&*$$#$$$#;
+         @+++++++++$#&***$*H**# ;#@@@
+          *@;;:*+**$@$****H*+@@$   $@$
+           #+**H***@@@**@:@    &@   @@
+           ;***&*@****&   @    @@   H**
+             &#$&#       ,@    @@    ***
+           @&#  .        @@   #@     *
+         ***            @@    **
+           H          #@@     +@
+                     **+
+                     @#;
+</pre>
+
+</details>
