@@ -21,21 +21,21 @@
 
 ## About
 
-Full-stack developer at [NeuralGT](https://github.com/NeuralGT), where I build **Fintrack**, a personal finance SaaS for the Chilean market (FastAPI + PostgreSQL + Next.js).
+Full-stack developer at [NeuralGT](https://github.com/NeuralGT), where I build **Plenor**, a personal finance SaaS for the Chilean market (FastAPI + PostgreSQL + Next.js).
 
-On the side, I am transitioning into **Machine Learning Engineering**: shipping production-grade ML projects, studying graduate-level statistics and optimization, and aiming for a remote ML role by late 2026.
+On the side, I am transitioning into **Machine Learning & AI-native Engineering**: shipping production-grade ML and agentic projects, studying graduate-level statistics and optimization, and aiming for a remote ML role by late 2026.
 
 Recent CS graduate (UTH 2026, 97/100 GPA).
 
 ---
 
-## Featured Project
+## Featured Projects
 
 ### [`geoplay-recommender`](https://github.com/bernhardtwo/geoplay)
 **Geo-contextual player segmentation & content ranking**
 
 <p>
-  <img src="https://img.shields.io/badge/status-in_progress-blue?style=flat-square"/>
+  <img src="https://img.shields.io/badge/status-completed-2EA043?style=flat-square"/>
   <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white"/>
   <img src="https://img.shields.io/badge/HDBSCAN-clustering-4B8BBE?style=flat-square"/>
@@ -54,11 +54,40 @@ Production-grade ML pipeline simulating a Pokémon GO–style game with **50,000
 - Strict tooling: `uv`, `ruff`, `mypy`, pre-commit hooks
 - MLflow experiment tracking, FastAPI serving layer, Dockerized deployment, GitHub Actions CI/CD
 
+### [`ledger-lens`](https://github.com/bernhardtwo/ledger-lens)
+**AI-native agentic financial analyst**
+
+<p>
+  <img src="https://img.shields.io/badge/status-completed-2EA043?style=flat-square"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Drizzle-C5F74F?style=flat-square&logo=drizzle&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Claude_Agent_SDK-D97757?style=flat-square&logo=anthropic&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MCP-000000?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoft-azure&logoColor=white"/>
+</p>
+
+An AI-native financial analyst built TypeScript-first. Upload bank statements and an agent extracts, categorizes, reconciles, and answers natural-language questions about your finances, with deterministic money math and a rigorous evaluation harness behind every LLM feature.
+
+Built **determinism-first**: the model decides what to compute and explains the result, while pure functions do the money math. Money is stored as currency-aware integers, so floating-point drift is never possible in financial figures.
+
+**Highlights**
+- Streaming agent chat with live tool calls over SSE
+- Read-only MCP server exposing 5 typed finance tools to the agent, scoped per account
+- Deterministic ingestion and currency-aware integer money, with no FX
+- Eval harness with a 23-case golden set wired into CI as a gate
+- Deployed to Azure Container Apps with OpenTelemetry, CI/CD via GitHub Actions and OIDC (no long-lived cloud secrets)
+
 ---
 
 ## Other Projects
 
-### [`fintrack`](https://github.com/NeuralGT) *(private · NeuralGT)*
+### [`plenor`](https://github.com/NeuralGT) *(private · NeuralGT)*
 
 <p>
   <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
@@ -92,13 +121,23 @@ Full-stack SaaS for personal finance in Chile. FastAPI backend with Alembic migr
   <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white"/>
 </p>
 
+**AI-native & Agents**
+
+<p>
+  <img src="https://img.shields.io/badge/Claude_Agent_SDK-D97757?style=flat&logo=anthropic&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MCP-000000?style=flat"/>
+  <img src="https://img.shields.io/badge/Zod-3E67B1?style=flat&logo=zod&logoColor=white"/>
+</p>
+
 **Backend**
 
 <p>
   <img src="https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NestJS-E0234E?style=flat&logo=nestjs&logoColor=white"/>
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white"/>
   <img src="https://img.shields.io/badge/Pydantic-E92063?style=flat&logo=pydantic&logoColor=white"/>
   <img src="https://img.shields.io/badge/Alembic-484C50?style=flat"/>
+  <img src="https://img.shields.io/badge/Drizzle-C5F74F?style=flat&logo=drizzle&logoColor=black"/>
 </p>
 
 **Frontend**
@@ -110,12 +149,13 @@ Full-stack SaaS for personal finance in Chile. FastAPI backend with Alembic migr
   <img src="https://img.shields.io/badge/TanStack_Query-FF4154?style=flat&logo=react-query&logoColor=white"/>
 </p>
 
-**Tooling**
+**Tooling & Cloud**
 
 <p>
   <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white"/>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white"/>
   <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white"/>
   <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black"/>
   <img src="https://img.shields.io/badge/uv-DE5FE9?style=flat"/>
   <img src="https://img.shields.io/badge/Ruff-D7FF64?style=flat&logo=ruff&logoColor=black"/>
@@ -125,7 +165,7 @@ Full-stack SaaS for personal finance in Chile. FastAPI backend with Alembic migr
 
 ## Currently Focused On
 
-- Shipping `geoplay-recommender` end-to-end: clustering → ranking → MLflow → FastAPI → Docker
+- Designing and shipping AI-native, full-stack systems end to end, from data layer to agent to deployment
 - Strengthening statistics and optimization fundamentals for graduate-level ML work
 - Building fluent technical English for international remote collaboration
 
