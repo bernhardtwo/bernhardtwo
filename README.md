@@ -31,7 +31,7 @@ Recent CS graduate (UTH 2026, 97/100 GPA).
 
 ## Featured Projects
 
-### [`geoplay-recommender`](https://github.com/bernhardtwo/geoplay)
+### [`geoplay`](https://github.com/bernhardtwo/geoplay)
 **Geo-contextual player segmentation & content ranking**
 
 <p>
@@ -82,6 +82,33 @@ Built **determinism-first**: the model decides what to compute and explains the 
 - Deterministic ingestion and currency-aware integer money, with no FX
 - Eval harness with a 23-case golden set wired into CI as a gate
 - Deployed to Azure Container Apps with OpenTelemetry, CI/CD via GitHub Actions and OIDC (no long-lived cloud secrets)
+
+### [`caselens`](https://github.com/bernhardtwo/caselens)
+**Cohere-native enterprise agentic assistant for warranty-claims triage**
+
+<p>
+  <img src="https://img.shields.io/badge/status-completed-2EA043?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Cohere-Command%20%C2%B7%20Embed%20%C2%B7%20Rerank-39594D?style=flat-square"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/pgvector-008BB9?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Azure_Container_Apps-0078D4?style=flat-square&logo=microsoft-azure&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white"/>
+</p>
+
+A Cohere-native agent that triages enterprise warranty claims: it answers policy questions grounded in a document corpus, works over a tenant-scoped claims database, and takes guarded actions, with every step audited. Built so that scoping and permissions live below the model, not in the prompt, so prompt injection cannot cross tenants.
+
+**Highlights**
+- Cohere-native stack: a Command tool-use agent over Embed retrieval and Rerank, with native grounded citations aligned to the source text
+- Tenant isolation, RBAC, and immutable audit enforced below the model: `tenant_id` is bound in a closure and never exposed in the tool schema, so the model cannot reach another tenant's data
+- Human-in-the-loop confirmation for state-changing actions, gated by an allowed-transition state machine
+- RAG and agent evaluation suites, including cross-tenant security scenarios, wired into CI as a release gate
+- Deployed live on Azure Container Apps (containerized, scale-to-zero), with a connection pool and transaction-isolated audit for production robustness
+- Next.js console: live tool-call trace, inline citations, rerank-scored sources, and a tenant and role switcher
 
 ---
 
