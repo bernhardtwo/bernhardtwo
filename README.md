@@ -6,8 +6,8 @@
 </p>
 
 <p align="center">
-  <a href="mailto:rruizveg@gmail.com">
-    <img src="https://img.shields.io/badge/Email-rruizveg@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white" alt="Email"/>
+  <a href="mailto:vega@bernhardtwo.com">
+    <img src="https://img.shields.io/badge/Email-vega@bernhardtwo.com-EA4335?style=flat&logo=maildotru&logoColor=white" alt="Email"/>
   </a>
   <a href="https://www.linkedin.com/in/bernhardtwo/">
     <img src="https://img.shields.io/badge/LinkedIn-bernhardtwo-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"/>
@@ -31,20 +31,26 @@ B.Eng. in Software Development and Management (UTH 2026, 97/100 GPA).
 
 ## Featured Projects
 
-### [`atfs`](https://github.com/bernhardtwo/TODO)
-**TODO: one-line description of the static malware scanner**
+### `atfs` *(private)*
+**Static, defensive malware scanner for PE and ELF binaries**
 
 <p>
-  <img src="https://img.shields.io/badge/status-TODO-D29922?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/status-v0.3.0_in_development-D29922?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/YARA-signatures-B22222?style=flat-square"/>
+  <img src="https://img.shields.io/badge/pefile_·_LIEF-parsing-555555?style=flat-square"/>
+  <img src="https://img.shields.io/badge/LightGBM-classifier-2E8B57?style=flat-square"/>
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white"/>
 </p>
 
-TODO: two or three sentences on what ATFS analyzes, how it decides a file is suspicious, and what it outputs.
+Classifies a binary as benign, suspicious, or malicious without executing it. Four layers run in order: hash reputation, YARA signatures, structural heuristics, and an ML classifier. Each layer contributes explainable evidence to the final score, so every verdict says why.
 
 **Highlights**
-- TODO
-- TODO
-- TODO
+- 0 false positives on 15,473 Windows system binaries (`System32` + `SysWOW64`), 95% Wilson upper bound 0.02%, under the project's FP < 0.1% target
+- 0 false positives on 2,851 Linux system binaries and 747 kernel drivers; the report states these corpora are still too small to prove the target
+- Heuristics recalibrated from 124 characterized false positives (W+X `INIT` sections on native images, entropy by section role, managed assemblies) with before/after baselines frozen in the repo
+- Degraded runs are explicit: a missing or broken layer resource is reported and turns a benign exit into its own code, so a verdict is never silently unverified
+- Stable JSON output with a schema version, CI exit codes per verdict, and a feature contract validated at model load
 
 ### [`caselens`](https://github.com/bernhardtwo/caselens)
 **Cohere-native enterprise agentic assistant for warranty-claims triage**
@@ -105,7 +111,10 @@ ML pipeline for geo-contextual player segmentation and content ranking over 50,0
 **Security**
 
 <p>
-  <img src="https://img.shields.io/badge/TODO-security_tools-D29922?style=flat"/>
+  <img src="https://img.shields.io/badge/YARA-B22222?style=flat"/>
+  <img src="https://img.shields.io/badge/pefile-555555?style=flat"/>
+  <img src="https://img.shields.io/badge/LIEF-555555?style=flat"/>
+  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white"/>
 </p>
 
 **Languages**
@@ -147,7 +156,6 @@ ML pipeline for geo-contextual player segmentation and content ranking over 50,0
   <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white"/>
   <img src="https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoft-azure&logoColor=white"/>
   <img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white"/>
 </p>
 
 ---
@@ -193,5 +201,5 @@ A small Yanma to close. Field guide entry: Bug/Flying type, Generation II, Poké
 ---
 
 <p align="center">
-  <sub>Thanks for stopping by. Reach out anytime via <a href="mailto:rruizveg@gmail.com">email</a> or <a href="https://www.linkedin.com/in/bernhardtwo/">LinkedIn</a>.</sub>
+  <sub>Thanks for stopping by. Reach out anytime via <a href="mailto:vega@bernhardtwo.com">email</a> or <a href="https://www.linkedin.com/in/bernhardtwo/">LinkedIn</a>.</sub>
 </p>
